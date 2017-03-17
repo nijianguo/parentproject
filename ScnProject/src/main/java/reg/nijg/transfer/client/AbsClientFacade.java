@@ -11,8 +11,7 @@ import java.nio.channels.Selector;
  * **/
 public abstract class AbsClientFacade {
 
-//	private DispatchServlet servlet;
- 	
+
 	private CommClient commClient;
 	
 	public AbsClientFacade(CommClient commClient) {
@@ -22,25 +21,13 @@ public abstract class AbsClientFacade {
 
 
 
-	public final void  execute(AbsReqTransfer req)throws ClassNotFoundException, IOException{
-//		commClient.send2(req);
-
-		Method rtnMethod=null;
-		Class clazz = Class.forName(req.getClassName());
-//		Method method = clazz.getDeclaredMethod(req.getMethodName());
-		try {
-			rtnMethod= clazz.getDeclaredMethod(req.getMethodName(),reg.nijg.model.Model.class);
-			if(req.getRespClassName()==null){
-				 commClient.send2(req, req.getRespClass());
-			}
-
-		} catch (NoSuchMethodException e) {
-			e.printStackTrace();
+	public Object  execute(AbsReqTransfer req)throws ClassNotFoundException, IOException{
+		if("void".equals(req.getRespClassName())) {
+			commClient.send2(req, req.getRespClass());
+			return null;
+		}else{
+			return commClient.send2(req, req.getRespClass());
 		}
-
-
-		Class rtnclazz = rtnMethod.getReturnType();
-		commClient.send2(req,rtnclazz);
 	}
 
 

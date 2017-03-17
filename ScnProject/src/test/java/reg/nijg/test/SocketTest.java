@@ -13,12 +13,19 @@ public class SocketTest {
 	 * ObjectInputStream   ois = new ObjectInputStream(socket.getInputStream());
 	 * 
 	 * **/
-	public static void main(String[] args){
+	public static void main(String[] args) throws NoSuchMethodException {
 		CommonServiceFacade service =(CommonServiceFacade)SocketClientProxy.getInstance();
 		Model model = new Model();
 		model.setAge(11123);
 		model.setName("nijg");
-		service.helloSocket(model);
+		String a = service.helloSocket(model);
+//System.out.println(SocketTest.class.getDeclaredMethod("test").getReturnType());
+		System.out.print(a);
 
+	}
+
+
+	public  void test(){
+		System.out.println("aaaa");
 	}
 }

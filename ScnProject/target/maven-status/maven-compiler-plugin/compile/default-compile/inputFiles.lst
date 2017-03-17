@@ -1,0 +1,17 @@
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/ReqTransferParam.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/StartUpEvent.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/model/Model.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/facade/CommonServiceFacade.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/ListenerService.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/MultiCaster.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/annotation/TRANS_TYPE.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/PublishService.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/proxy/SocketClientProxy.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/annotation/TransTypeEnum.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/AbsReqTransfer.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/CommClient.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/StartUpSocketListener.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/SocketClient.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/AbsClientFacade.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/client/socket/SocketClientFacade.java
+/Users/nijianguo/bak/Parent-project/ScnProject/src/main/java/reg/nijg/transfer/notify/StartUpEventListener.java

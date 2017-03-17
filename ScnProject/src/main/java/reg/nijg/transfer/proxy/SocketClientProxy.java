@@ -35,7 +35,7 @@ public class SocketClientProxy {
 //							System.out.println("客户端请求参数为："+args[0].toString());
 //							处理前置请求
 							signMethodParam(AbsReqTransfer.class.cast(args[0]),method,proxy);
-							facade.execute((AbsReqTransfer) args[0]);
+						return 	facade.execute((AbsReqTransfer) args[0]);
 						}
 
 					}else{
@@ -49,18 +49,13 @@ public class SocketClientProxy {
 		return delgate;
 	}
 
-
-
 		public static void signMethodParam(AbsReqTransfer req,Method method,Object obj){
-		req.setClassName(obj.getClass().getName());
+		req.setClassName(method.getDeclaringClass().getName());
 		req.setMethodName(method.getName());
 		req.setReqClassName(req.getClass().getName());
 		req.setRespClassName(method.getReturnType().getName());
 		req.setRespClass(method.getReturnType());
-		System.out.println("signMethodParam is tostring value:"+req.toString());
-
-
-//
+		System.out.println("signMethodParam is to string value:"+req.toString());
 	}
 	
 }

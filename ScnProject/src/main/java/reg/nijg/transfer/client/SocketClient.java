@@ -84,8 +84,6 @@ public class SocketClient implements CommClient {
 	}*/
 
 
-
-
 	@Override
 	public <T extends Serializable> void send3(T t) {
 
